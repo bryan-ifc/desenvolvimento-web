@@ -1,0 +1,118 @@
+/* === IMPORTAÇÃO DE FONTES */
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100..900;1,100..900&family=Fredoka:wght@300..700&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Oswald:wght@200..700&display=swap');
+/*
+Follow - font-family: "Fredoka", sans-serif;
+Medu - Oswald
+*/
+/* ==========================*/
+
+/* ==== FORMATAÇÃO GERAL === */
+html{
+    font-size: clamp(1rem, 2vw + 0.8rem, 3rem);
+    font-family: "Epilogue", sans-serif;
+}
+h1{
+    font-family: "Nunito", sans-serif;
+}
+h2,h3,h4,h5,h6{
+    font-family: "Oswald", sans-serif;
+}
+
+header {
+    text-align: center;
+}
+header ul li {
+    margin: 1.5vw 0 1.5vw 0;
+    font-size: 0.6rem;
+    font-weight: 600;
+}
+header ul li span {
+    background-color: #FFD40D;
+    padding: 1.5vw 3vw 1.5vw 3vw ;
+    color: white;
+    border-radius: 1vw;
+    display: inline-block;
+    margin: 2vw 0 1vw 0;
+}
+.enjoy {
+text-align: center;
+background-color: #faafaf;
+}
+
+.enjoy h1 {
+    font-size: 2rem;
+    margin: 3vw 0 3vw 0;
+    padding: 3vw 0 3vw 0;
+}
+
+.enjoy p {
+    font-size: small;
+    font-weight: 300;
+    margin: 3vw 0 3vw 0;
+    padding: 3vw 0 3vw 0;
+}
+.enjoy h2 a {
+    background-color: #ED274B;
+    padding: 1vw 3vw 1vw 3vw;
+    border-radius: 5vw;
+    font-weight: 700;
+    color: white
+}
+
+.popular {
+    background-color: rgb(226, 226, 226);
+
+}
+.popular .cima {
+    color: #00A149 ;
+    font-size: 3vw;
+    padding:  12vw 0 0 5vw;
+}
+.popular h2 {
+    padding: 0 0 7vw 5vw;
+}
+.popular ul li {
+    background-color: white ;
+    text-align: center;
+}
+.popular ul li h3 {
+    font-size: 1.3rem;
+    font-weight: 600;
+    border-bottom: solid 1px #FFD40D;
+    
+}
+
+.popular ul li p {
+    color: #FFD40D;
+
+}
+footer {
+    background-color: rgb(226, 226, 226);
+    padding: 15vw ;
+    margin: 5vw 0 0 0;
+
+}
+.follow h2 {
+    font-size: 2rem;
+    text-align: center;
+    font-weight: 700;
+}
+footer p {
+    color: #ED274B;
+    font-size: 0.45rem;
+    margin: 0 6vw 0 3vw;
+    font-weight: 700;
+}
+footer p span {
+    color: black;
+}
+
+
+/* MEDIA QUERY - DESKTOP */
+@media  screen and (min-width: 600px) {
+    header ul {
+        display: flex;
+        justify-content: center;
+        gap: 2vw;
+    }
+}

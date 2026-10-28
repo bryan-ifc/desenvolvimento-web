@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>drop-down</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="#">Início</a></li>
+          <li>
+            <a href="#">Produtos</a>
+            <ul>
+              <li><a href="#">Notebook</a></li>
+              <li><a href="#">Smartphone</a></li>
+              <li><a href="#">Acessórios</a></li>
+              <li><a href="#">Ofertas</a></li>
+            </ul>
+          </li>
+
+          <li>
+            <a href="#">Serviço</a>
+            <ul>
+              <li><a href="#">Conserto</a></li>
+              <li><a href="#">Venda</a></li>
+              <li><a href="#">Troca</a></li>
+              <li><a href="#">Reserva</a></li>
+            </ul>
+          </li>
+
+          <li><a href="#">Sobre</a></li>
+          <li><a href="#">Contato</a></li>
+        </ul>
+      </nav>
+    </header>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        color: inherit;
+        box-sizing: border-box;
+        text-decoration: none;
+      }
+
+      header {
+        background-color: rgb(26, 32, 61);
+        color: white;
+      }
+
+      header nav > ul {
+        display: flex;
+        justify-content: space-around;
+      }
+      header nav ul li ul {
+        visibility: hidden;
+        opacity: 0;
+        position: absolute;
+        transition: opacity 1s;
+      }
+
+      header nav ul li:hover ul {
+        visibility: visible;
+        opacity: 1;
+        transition: opacity 1s;
+    }
+    </style>
+    <main></main>
+    <footer></footer>
+  </body>
+</html>

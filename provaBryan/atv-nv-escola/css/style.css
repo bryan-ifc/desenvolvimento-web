@@ -1,0 +1,165 @@
+html {
+  font-size: clamp(1rem, calc(0.5rem + 1vw), 3rem);
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.btn {
+  color: white;
+  background-color: #96BB7C;
+  display: inline-block;
+  padding: 8px 16px 8px 16px;
+  font-weight: bold;
+  border-radius: 5px;
+}
+.btn:hover{
+  background-color:  #c4dfb1; 
+  color: rgb(55 , 86, 40);
+}
+.btn-border{
+    display: inline-block;
+  padding: 8px 16px 8px 16px;
+    border-radius: 5px;
+    color: #96BB7C;
+    border: 1px solid #96BB7C;
+}
+
+/*=== Header ===*/
+
+header {
+  background-color: #FFF2F3;
+  text-align: center;
+  padding: 3vw 10vw ;
+
+}
+header h1 {
+  font-size: 2rem;
+  font-weight: bold;
+}
+header ul li {
+  color: #737373;
+  margin: 2vw 0 2vw 0;
+}
+
+/* === Banner === */
+
+.Banner {
+  background-color: #FFF2F3;
+  text-align: center;
+  padding: 0 0 5vw 0;
+  
+}
+.Banner h4 {
+  font-size: 0.9rem;
+  font-weight: bolder;
+  color: #96BB7C;
+  margin: 1vw 0 1vw 0;
+}
+.Banner h2 {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #252B42;
+    margin: 1vw 0 1vw 0;
+}
+
+.Banner p.p1 {
+  color: #737373;
+    margin: 1vw 0 1vw 0;
+}
+.team .texto{
+  text-align: center;
+}
+.team .texto2 ul li {
+  text-align: center;
+}
+.team h4 {
+  color: #96BB7C;
+  font-weight: bold;
+  padding: 5vw 0 2vw 0;
+  font-size: 2.4vw;
+}
+.team h3 {
+    color: #252B42;
+    font-weight: 600;
+
+}
+.team h2 {
+  color: #252B42;
+  font-size: 1.5rem;
+  font-weight: bolder;
+  padding: 0vw 0 2vw 0;
+}
+
+.team p {
+  color: #737373;
+  font-size: 2.4vw;
+  padding: 0 0 2vw 0;
+}
+.team ul li {
+  background-color: #ECF0E8;
+  width: 60%;
+  margin: 0 auto 3vw auto;
+}
+.team ul li img {
+  width: 100%;
+}
+.news {
+  background-color: #FFF2F3;
+  text-align: center;
+}
+.news h2 {
+  padding: 7vw 0 3vw 0;
+  color: #96BB7C;
+  font-size: 2.4vw;
+  font-weight: bolder;
+}
+.news h3 {
+  color: #252B42;
+  padding: 0 0 3vw 0;
+  font-size: 2rem;
+  font-weight: bolder;
+}
+.news p {
+  color: #737373;
+  padding: 0 0 7vw 0;
+}
+
+footer p {
+color: #737373;
+font-size: 3vw;
+font-weight: 600;
+}
+footer ul li {
+  justify-content: right ;
+  display: flex;
+  gap: 3vw ;
+}
+@media only screen and (min-width: 600px) {
+  header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+  }
+  header ul {
+    display: flex;
+    gap: 1.5vw;
+    align-items: center;
+  }
+
+  .Banner{
+    text-align: left;
+    display: flex;
+    gap: 4vw;
+    padding: 3vw 10vw 0 10vw;
+  }
+  .Banner div{
+    width: 40%;
+  }
+  .team ul {
+    display: flex;
+  }
+  .team ul li {
+    width: 25%;
+  }
+  .team .texto {
+    text-align: left;
+  }
+  }

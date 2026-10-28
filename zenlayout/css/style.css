@@ -1,0 +1,103 @@
+/* === IMPORTAÇÃO DE FONTES */
+
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100..900;1,100..900&family=Fredoka:wght@300..700&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Oswald:wght@200..700&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
+/*
+Fontes Disponíveis:
+// Sugiro usar esta 
+font-family: "Urbanist", sans-serif; 
+font-family: "Fredoka", sans-serif;
+font-family: "Epilogue", sans-serif;
+font-family: "Nunito", sans-serif;
+font-family: "Oswald", sans-serif;
+/* ==========================*/
+
+/* ==== FORMATAÇÃO GERAL === */
+html{
+    font-size: clamp(1rem, 2vw + 0.8rem, 3rem); 
+    font-family: "Urbanist", sans-serif; 
+}
+
+header {
+    background-color: #D08AA5;
+    text-align: center;
+        padding: 2vw 0 5vw 0;
+
+}
+header ul li {
+    color: white;
+    font-weight: 500 ;
+    font-size: 2vw;
+    padding: 2vw 0 1vw 0;
+}
+.banner {
+    background-color: #D08AA5;
+    color: white;
+    text-align: center;
+    padding: 0 0 3vw 0;
+}
+.banner h1 {
+    font-weight: 900;
+    font-size: 1.3rem;
+    padding: 0 0 3vw 0;
+}
+.banner p {
+    font-size: 3vw;
+}
+.banner h1 span {
+    border-bottom: solid 1px white ;
+}
+.banner .btn1 {
+    background-color: white;
+    color: black;
+    font-size: 2.5vw;
+    padding: 1.5vw 3vw 1.5vw 3vw;
+    display: inline-block;
+    border-radius: 1.5vw;
+    margin: 3vw 0 3vw 0;
+}
+.principal {
+    background-color: #F0D8E1;
+    padding: 2vw 0 2vw 0;
+}
+
+
+.principal h3 {
+    font-size: 4vw;
+    font-weight: 800;
+    margin: 3vw 0 3vw 0;
+    
+}
+.principal p {
+    margin: 3vw 0 3vw 0;
+    font-size: 2vw;
+    font-weight: 300;
+}
+.principal ul li {
+    background-color: white;
+    margin: 5vw 3vw 5vw 3vw;
+    border-radius: 3vw;
+    padding: 3vw 5vw 3vw 5vw;
+    text-align: center;
+}
+
+.principal .rosa {
+    color: #fa3f87;
+    font-size: 2vw;
+}
+.principal .azul {
+    color: aqua;
+    font-size: 2vw;
+}
+.principal .laranja {
+    color: orange;
+    font-size: 2vw;
+
+}
+
+
+
+
+/* MEDIA QUERY - DESKTOP */
+@media  screen and (min-width: 600px) {
+
+}

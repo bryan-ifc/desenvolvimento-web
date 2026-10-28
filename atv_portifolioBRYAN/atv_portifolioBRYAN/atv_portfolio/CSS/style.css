@@ -1,0 +1,127 @@
+html{
+    font-size: clamp(0.9rem, calc(0.5rem + 1.5vw), 2.5rem);
+    font-family: "Heebo", sans-serif;
+}
+
+a.Atual{
+    color: #FF6464;
+}
+
+/* === header === */
+
+header ul li {
+    text-align: center;
+    padding: 6vw 0 0vw 0;
+}
+
+/* === BANNER === */
+
+section.Banner {
+    text-align: center;
+    padding: 10vw 2vw 10vw 2vw ;
+}
+section.Banner img {
+    width: 40%;
+}
+section.Banner h1 {
+    font-size: 2rem;
+}
+section.Banner p {
+    padding: 1vw 0vw 1vw  0vw;
+}
+section.Banner p a {
+    background-color: #FF6464 ;
+    color: white;
+    padding: 10px 20px 10px 20px;
+    display: inline-block;
+}
+
+/*=== rc posts ===*/
+
+section.rc-posts  {
+    background-color: #e3f6fc;
+    padding: 5vw 2vw 5vw 2vw
+} section.rc-posts h2 {
+    text-align: center;
+} section.rc-posts ul li {
+    background-color: white;
+    margin: 6vw;
+    padding: 15px 10px 15px 10px;
+} section.rc-posts ul li h3{
+    font-size: 1.5rem;
+}
+section.rc-posts ul li p{
+    margin: 5px 1px 5px 1px;
+}
+
+/*=== ft works ===*/
+
+section.ft-works {
+    padding: 2vw 2vw 2vw 2vw;
+}
+section.ft-works h2{
+    text-align: center;
+    margin: 2vw 0vw 4vw 0vw; 
+}
+section.ft-works ul li h3 {
+    font-size: 1.3rem;
+    font-weight: bolder;
+    color: #21243D;
+}
+section.ft-works ul li p.info {
+    color: #CAE7EF;
+}
+section.ft-works ul li p span {
+    color: white;
+    background-color: #21243D;
+    border-radius: 20px;
+    font-weight: bolder;
+    padding: 0.2vw 1.2vw 0vw 1.2vw;
+    display: inline-block;
+    margin: 0px 15px 0px 0px;
+    font-weight: 750;
+}
+section.ft-works ul li {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.196);
+    padding: 3vw 0 3vw 0;
+}
+section.freatured {
+    margin: 2vw;
+}
+section.freatured h1 {
+    font-size: 6vw;
+    padding: 1vw 0 3vw 0;
+}
+section.freatured ul li h2 {
+    color: #21243D;
+    font-size: 5vw;
+    font-weight: 700;
+}
+section.freatured ul li p span{
+    background-color: #FF6464;
+    color: white;
+    padding: 2px 10px 2px 10px;
+    margin: 1vw 2vw 3vw 1vw;
+    border-radius: 2vw;
+    display: inline-block;
+    font-weight: 900;
+}
+section.freatured ul li span img {
+    width: 100%;
+}
+section.freatured ul li {
+    border-bottom: 1px solid #E0E0E0;
+}
+
+/*=== footer ===*/
+
+footer{
+    text-align: center;
+}
+footer nav a {
+    display: inline-block;
+    margin: 3px 0px 12 mpx 0;
+}
+footer nav a img {
+    width: 7vw;
+}
