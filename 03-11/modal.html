@@ -263,15 +263,16 @@
     <div class="base-modal">
       <section>
         <h2>Confirme a entrada</h2>
+
+        <form action="#">
+          <p>
+            <label for="ano">Ano de Nascimento:</label>
+            <input type="number" id="ano" />
+          </p>
+        </form>
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo tempore
-          reiciendis aperiam corporis quae, fuga pariatur, voluptatum
-          consequuntur repudiandae eum architecto itaque voluptates deserunt
-          adipisci iusto voluptatibus quasi praesentium! Quis!
-        </p>
-        <p>
-          <button onclick="entrar()" type="button">Entrar </button>
-          <button onclick="sair()" type="button">Sair </button>
+          <button class="entrar" onclick="entrar()" type="button">Entrar</button>
+          <button class="sair" onclick="sair()" type="button">Sair</button>
         </p>
       </section>
     </div>
@@ -279,27 +280,62 @@
       div.base-modal {
         position: absolute;
         top: 0;
-        background-color: rgba(0, 0, 0, 0.200);
+        background-color: rgba(0, 0, 0, 0.2);
         height: 100%;
         width: 100%;
         backdrop-filter: blur(2.6767676767px);
       }
 
-      div.base-modal section{
+      div.base-modal section {
         width: 25vw;
         height: 15vw;
         margin: 10vw auto;
         background-color: white;
         border-radius: 10px;
         text-align: center;
-        }
+        border: solid 4px pink;
+
+      }
+      div h2 {
+        padding: 1vw 0 0 0;
+        margin: 0vw 0vw 1vw 0vw;
+        font-size: 2vw;
+      }
+      button.entrar{
+        background: linear-gradient(91deg, rgb(226, 83, 131),rgba(226, 83, 131, 0.377) );
+        padding: 1vw 2vw 1vw 2vw;
+        margin: 1vw 0.5vw 0.5vw 0.5vw;
+        border-radius: 8px;
+        border: none;
+        color: white;
+      }
+      button.sair {
+        background: linear-gradient(91deg, #4a81ee, #062768);
+        padding: 1vw 2vw 1vw 2vw;
+        margin: 1vw 0.5vw 0.5vw 0.5vw;
+        border-radius: 8px;
+        border: none;
+        color: white;
+      }
+
+
     </style>
     <script>
-        function entrar() {
-            console.log("iae")
-            let janela = document.querySelector("div.base-modal")
-            janela.style.display= none
+      function entrar() {
+        console.log("iae");
+        let janela = document.querySelector("div.base-modal");
+        let ano = parseInt(document.querySelector ("#ano").value);
+        console.log(ano);
+        if (2026 - ano >=18) {
+          janela.style.display = "none";
         }
+        else{
+             window.location = "https://8.animaneco.com.br/";
+        }
+      }
+      function sair() {
+        window.location = "https://8.animaneco.com.br/";
+      }
     </script>
   </body>
 </html>
