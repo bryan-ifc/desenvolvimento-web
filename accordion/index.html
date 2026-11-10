@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>accordion</title>
+</head>
+<body>
+    <main>
+<section>
+    <h1>
+        Perguntas Frequentes
+    </h1>
+    <ul>
+        <li onclick="ZéDaManga(this)">
+            <h2>O que é JavaScript?<span>+</span></h2>
+            <p>JavaScript é uma linguagem de programação utilizada para adicionar interatividade às páginas web.</p>
+        </li>
+        <li onclick="ZéDaManga(this)">
+            <h2>O que é DOM?<span>+</span></h2>
+            <p>DOM é uma representação dos elementos HTML que permite sua manipulação por JavaScript.</p>
+        </li onclick="ZéDaManga(this)">
+        <li>
+            <h2>O que são eventos?<span>+</span></h2>
+            <p>Eventos permitem executar ações em resposta às interações do usuário.</p>
+        </li>
+    </ul>
+</section>
+    </main>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            list-style: none;
+            text-decoration: none;
+            color: inherit;
+        }
+        body{
+            background: #46575f;
+            color: white;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+        h1{
+text-align: center;
+margin: 5vw 0; 
+border-bottom: 1px solid white;
+width: 50%;
+margin: 5vw auto;
+padding-bottom: 2vw;           
+        }
+
+        ul{
+background-color: #009688;
+width: 50%;
+margin: 0 auto;
+border-radius: 5px;
+box-shadow: -4px 4px 10px rgba(0, 0, 0, 0.5);        }
+
+        ul li {
+            padding: 5px 10px 5px 10px;
+            border-bottom: 1px solid white;
+        }
+        ul li:last-child {
+            border: none;
+        }
+        
+        ul li p{
+            height: 0;
+            overflow: hidden;
+            transition: all 1s ease;
+
+        }
+
+        ul li h2 {
+         cursor: pointer;
+         display: flex;
+         justify-content: space-between;
+
+        }
+
+.aberto{
+    height: 150px;
+    transition: all 1s  ease;
+}
+
+    </style>
+    <script>
+        function ZéDaManga(elemento) {
+            console.log(elemento);
+            elemento.querySelector("p").classList.toggle("aberto");
+           console.log( elemento.querySelector("span").innerText);
+      if (     elemento.querySelector("span").innerText == "+") {
+             elemento.querySelector("span").innerText = "-"
+      } else {
+             elemento.querySelector("span").innerText = "+"
+      }
+        }
+        
+
+    </script>
+</body>
+</html>
